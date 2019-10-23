@@ -25,4 +25,6 @@ Route::get('say/{name?}',['as'=>'hello.index',function($name='Everybody'){
     return'Hello,'.$name;
 }]);
 
-
+Route::get('dashboard',function(){
+    return'dashboard';
+});
