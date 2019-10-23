@@ -11,8 +11,12 @@
 |
 */
 
-Route::get('/', function () {
+//Route::get('/', function () {
     //return ('welcome');
     //return view('welcome');
-    return redirect('welcome');
+    //return redirect('welcome');
+//});
+
+Route::get('hello/{name}',function($name){
+    return'Hello,'.$name;
 });
