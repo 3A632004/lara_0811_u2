@@ -11,15 +11,15 @@
 |
 */
 
-Route::get('/', function () {
+//Route::get('/', function () {
     //return ('welcome');
     //return view('welcome');
-    return redirect('welcome');
-});
+//    return redirect('welcome');
+//});
 
-Route::get('welcome', function () {
-    return view('welcome');
-});
+//Route::get('welcome', function () {
+//    return view('welcome');
+//});
 
 //Route::get('hello/{name}',function($name){
     //return'Hello,'.$name;
@@ -39,5 +39,5 @@ Route::group(['prefix'=>'admin'],function(){
     });
 });
 
-//Route::get('/',['as'=>'home.index','uses'=>
-//    'HomeController@index']);
+Route::get('/',['as'=>'home.index','uses'=>
+    'HomeController@index']);
